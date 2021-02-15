@@ -3,7 +3,7 @@ import { EventContext } from "./EventProvider.js"
 import "./events.css"
 
 export const EventList = (props) => {
-    const { events, getEvents } = useContext(EventContext)
+    const { events, getEvents, joinEvent } = useContext(EventContext)
 
     useEffect(() => {
         getEvents()
@@ -30,6 +30,9 @@ export const EventList = (props) => {
                                 })
                             }
                             @ {event.time}
+                            <button className="btn btn-2"
+                                onClick={() => joinEvent(event.id)}
+                        >Join</button>
                         </div>
                     </section>
                 })

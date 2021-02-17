@@ -6,8 +6,8 @@
 
 .event {
     background-color: goldenrod;
-    border: 20px dashed lime;
-    padding: 5rem;
-    line-height: 3rem;
-    margin: 2px;
+    border: 2px dotted lime;
+    padding: 1rem;
+    line-height: 2rem;
+    margin: 1rem;
 }

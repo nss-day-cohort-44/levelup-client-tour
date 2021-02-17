@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa|Patua+One");
+
 /*Typography
 --------------------------------------------------------------*/
 
@@ -14,6 +15,10 @@ body, button, input, select, textarea {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Patua One", serif;
     letter-spacing: 2px;
+}
+
+h4 {
+    margin-block-end: 0.33rem;
 }
 
 code {
@@ -46,9 +51,10 @@ code {
 	color: inherit;
 	background: none;
 	cursor: pointer;
-	padding: 25px 80px;
+    padding: 0.35rem 1.5rem;
+    box-shadow: 0.25rem 0.25rem 0.7rem #90969b;
 	display: inline-block;
-	margin: 15px 30px;
+	margin: 0.5rem 0.75rem;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	font-weight: 700;
@@ -82,7 +88,7 @@ code {
 
 /* Icon separator */
 .btn-sep {
-	padding: 25px 60px 25px 120px;
+    padding: 0.35rem 1.5rem 0.25rem 5rem;
 }
 
 .btn-sep:before {
@@ -109,7 +115,7 @@ code {
 	height: 100%;
 	left: 0;
 	top: 0;
-	line-height: 3;
+	line-height: 1.6;
 	font-size: 140%;
 	width: 60px;
 }
@@ -134,7 +140,7 @@ code {
 	height: 100%;
 	left: 0;
 	top: 0;
-	line-height: 3;
+	line-height: 1.7;
 	font-size: 140%;
 	width: 60px;
 }
@@ -191,6 +197,11 @@ code {
 
 /* Icons */
 
+.icon-create:before {
+	content: "🌟";
+}
+
 .icon-send:before {
 	content: "🔓";
 }
+

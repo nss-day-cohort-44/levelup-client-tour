@@ -10,15 +10,21 @@ export const LevelUp = () => (
         <Route render={() => {
             if (localStorage.getItem("lu_token")) {
                 return <>
-                    <Route render={NavBar} />
-                    <Route render={props => <ApplicationViews {...props} />} />
+                    <Route>
+                        <NavBar />
+                        <ApplicationViews />
+                    </Route>
                 </>
             } else {
                 return <Redirect to="/login" />
             }
         }} />
 
-        <Route path="/login" render={Login} />
-        <Route path="/register" render={Register} />
+        <Route path="/login">
+            <Login/>
+        </Route>
+        <Route path="/register">
+            <Register/>
+        </Route>
     </>
 )
